@@ -9,6 +9,11 @@ Docker:
 $ docker run -e S3_ACCESS_KEY_ID=key -e S3_SECRET_ACCESS_KEY=secret -e S3_BUCKET=my-bucket -e S3_PREFIX=backup -e POSTGRES_DATABASE=dbname -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -e POSTGRES_HOST=localhost avencera/postgres-s3-backup
 ```
 
+From inside container:
+```
+sh backup.sh
+```
+
 Docker Compose:
 ```yaml
 postgres:
