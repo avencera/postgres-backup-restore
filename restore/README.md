@@ -24,7 +24,7 @@ $ docker run -e S3_ACCESS_KEY_ID=key -e S3_SECRET_ACCESS_KEY=secret -e S3_BUCKET
 
 From inside container:
 ```
-  sh restore.sh
+sh restore.sh
 ```
 
 ## Dropping public
