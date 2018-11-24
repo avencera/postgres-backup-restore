@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:edge
 LABEL maintainer="Praveen Perera <praveen@avencera.com>"
 
 ADD install.sh install.sh
