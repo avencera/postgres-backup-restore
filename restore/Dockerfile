@@ -1,8 +1,15 @@
 FROM alpine:3.15
 LABEL maintainer="Praveen Perera <praveen@avencera.com>"
 
-ADD install.sh install.sh
-RUN sh install.sh && rm install.sh
+## Install AWS CLI
+# install pg_dump and python
+RUN apk add --no-cache postgresql-client \
+    python3 \
+    py3-pip \
+    py3-crcmod
+
+## Install AWS CLI
+RUN pip install awscli
 
 ENV POSTGRES_DATABASE **None**
 ENV POSTGRES_HOST **None**
