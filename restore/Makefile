@@ -4,8 +4,8 @@
 PRERELEASE ?= $(shell git describe --match= --always --dirty)
 TIMESTAMP ?= $(shell date +%y%m%d%H%M)
 
-# TAG for the postgres-backup-restore docker image, e.g., "backup-4be01eb-dirty".
-IMG_TAG ?= backup-$(PRERELEASE)-$(TIMESTAMP)
+# TAG for the postgres-backup-restore docker image, e.g., "restore-4be01eb-dirty".
+IMG_TAG ?= restore-$(PRERELEASE)-$(TIMESTAMP)
 IMG_REPO ?= docker.io
 
 # Image URL to use all building/pushing image targets
