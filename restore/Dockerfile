@@ -1,7 +1,8 @@
 FROM alpine:3.15
 LABEL maintainer="Praveen Perera <praveen@avencera.com>"
 
-## Install AWS CLI
+RUN apk update
+
 # install pg_dump and python
 RUN apk add --no-cache postgresql-client \
     python3 \
